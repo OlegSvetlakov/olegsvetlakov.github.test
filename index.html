@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Museum</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+        <div class="container_2">
+          <div class="header__body">
+            <a href="#" class="header__logo"><img src="favicon/android-chrome-512x512.png" class="fav"></a>                                
+                <div class="header__burger">
+                  <span></span>
+                </div>
+                  <nav class="header__menu">
+                    <ul class="header__list">
+                      <li>
+                        <a href="" class="header__link">О музее</a>
+                      </li>
+                      <li>
+                        <a href="" class="header__link">Выставки и события</a>
+                      </li>
+                      <li>
+                        <a href="" class="header__link">Филиалы</a>
+                      </li>
+                      <li>
+                        <a href="" class="header__link">Посетители</a>
+                      </li>
+                      <li>
+                        <a href="" class="header__link">Наука</a>
+                      </li>
+                    </ul>
+                  </nav>
+          </div>               
+        </div>
+    </header>
+  </div>
+    <section class="slaider">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 picter">
+            <img src="img/img2.png">
+          </div>
+        </div>
+      </div>
+      <div class="arrow">
+        <button type="button" style="background-color: transparent; border:none; padding: 20px; margin-top: 30px"><img src="img/Arrow 1.png"></button>
+        <button type="button" style="background-color: transparent; border:none; padding: 20px; margin-top: 30px"><img src="img/Arrow 2.png"></button>
+      </div>  
+      </section>
+
+<section class="program">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-xl-2 col-md-6 col-sm-12">
+        <div class="faq_1">
+          <img src="img/FAQ.png">
+      </div> 
+      </div>
+      <div class="col-xl-10 col-md-6 col-sm-12">
+        <div class="faq">
+         <div class="line"></div>
+          <div class="container_1">
+              <div class="item">
+                <div class="title">
+                <div class="akr">Как добраться до музея?</div>
+                </div>
+                <div class="content">
+                  <div class="akr_1">В Национальный музей Республики Татарстан можно добраться общественным транспортом:
+                      <br>1) «Станция метро «Кремлевская», а затем по направлению к Кремлю пройдя 5 минут пешком; 
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                  <div class="line_1"></div>
+                <div class="title">
+                  <div class="akr">Есть ли поблизости удобная парковка?</div>
+                </div>
+                <div class="content">
+                  <div class="akr_1">Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus, atque ratione maxime aspernatur a.ipsum non placeat quibusdam.</div>
+                </div>
+                <div class="line_1"></div>
+              </div>
+              <div class="item">
+                <div class="title">
+                  <div class="akr">Можно ли воспользоваться аудиогидом?</div>
+                </div>
+                <div class="content">
+                  <div class="akr_1">Lorem, ipsum dolor sit amet, consectetur adipisicing elit eos consectetur natus omnis dolorum mollitia totam.</div>
+                </div>
+                <div class="line_1"></div>
+              </div>
+            </div>
+            <script>
+              const spoiler = document.querySelectorAll('.title');
+      
+      spoiler.forEach(function(index) {
+        index.addEventListener('click', function() {
+          spoiler.forEach((el) => {
+            let content = el.nextElementSibling;
+            if (el != this) {
+              content.style.maxHeight = null;
+              el.classList.remove('active');
+            } else {
+              content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+              this.classList.toggle('active');
+            }
+          });
+        });
+      });
+            </script>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-left text-uppercase color1 mb-5">НОВОСТИ</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="img/1.png" class="block_1">
+            <h3>Заголовок</h3>
+            <p>ОписаниОписание Описание Описание Описание Описание Описание</p>          
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="img/2.png" class="block_1">
+            <h3>Заголовок</h3>
+            <p>ОписаниОписание Описание Описание Описание Описание Описание</p>    
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="img/3.png" class="block_1">
+            <h3>Заголовок</h3>
+            <p>ОписаниОписание Описание Описание Описание Описание Описание</p>   
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="img/4.png" class="block_1">
+            <h3>Заголовок</h3>
+            <p>ОписаниОписание Описание Описание Описание Описание Описание</p>   
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="img/5.png" class="block_1">
+            <h3>Заголовок</h3>
+            <p>ОписаниОписание Описание Описание Описание Описание Описание</p>   
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <img src="img/6.png" class="block_1">
+            <h3>Заголовок</h3>
+            <p>ОписаниОписание Описание Описание Описание Описание Описание</p>   
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="forwhom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text_1">Подпишись</div>
+            <div class="text_2">
+              Отправляем анонсы новых статей, выпусков и <br>трансляций
+             </div>
+          </div>    
+          <form style="padding:10px">
+            <div class="row">
+              <div class="col-6">
+                <input type="email" class="form-control form_1" placeholder="Почта">
+              </div>
+              <div class="col-6">
+                <input type="date" class="form-control form_1" placeholder="15.02.2022">
+              </div>
+              <div class="col-6">
+                <input type="telephone" class="form-control form_1" placeholder="Телефон">
+              </div>
+              <div class="col-6">
+                <input type="time" class="form-control form_1" placeholder="15.50">
+              </div>
+            </div>
+          </form>
+              <div class="col-12">   
+            <button class="mybtn form_5">Подписаться</button>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="block_4">
+              <h4>Заголовок</h4>
+              <div class="block_2">ОписаниОписание Описание Описание Описание<br>Описание Описаниее</div><br>
+              <div class="block_3"><a href="https://500na700.ru/" class="app">500na700.ru</a></div><br>         
+          </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="vk">
+              <a href=""><img src="img/Vector.png" style="padding:0 5px"></a>
+              <a href=""><img src="img/fb.png" style="padding:0 5px"></a>
+              <a href=""><img src="img/tiktok.png" style="padding:0 5px"></a>
+              <a href=""><img src="img/yb.png" style="padding:0 5px"></a>
+            </div>    
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+          </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
